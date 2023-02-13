@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <style>
+        section, fieldset {
+                margin: 10px;
+            }
+
+        label {
+            user-select: none;
+            cursor: pointer;
+        }          
+        table {
+            border: 2px solid black;
+            background-color: #eea;
+            border-spacing: 0;
+        }
+        th,
+        td {
+            border: 2px solid black;
+            margin: 0;
+            padding: 4px;
+            text-align: left;
+        }
+        tfoot td {
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 8px;
+        }   
+    </style>
+</head>
+
+<body>    
+
+    <header>
+
+        <table>
+            <tr>
+              <td>
+                <details>
+                    <summary>Languages | Sprachen</summary>
+                    <p><a href="registration.html">english</a></p>
+                    <p><a href="registration-de.html">deutsch</a></p>
+                </details>
+              </td>
+              <td>
+                <a href="index-hu.html">Főoldal</a>
+              </td>
+            </tr>
+          </table>        
+
+    </header>
+
+    <main>
+
+        <h1>Regisztrálj!</h1>
+
+        <form action="https://formspree.io/f/mwkjlakp" method="post">
+            <section>
+                <label>
+                    Vezetéknév*:
+                    <input type="text" name="last-name" placeholder="Vezetéknév" required>
+                </label>
+            </section>
+            <section>
+                <label>
+                    Keresztnév*:
+                    <input type="text" name="first-name" placeholder="Keresztnév" required>
+                </label>
+            </section>
+            <section>
+                <label>
+                    E-mail cím*:
+                    <input type="email" name="email" placeholder="E-mail cím" required>
+                </label>
+            </section>
+            <section>
+                <label>
+                    Jelszó*:
+                    <input type="password" name="password" placeholder="Nyolc vagy több karakter." 
+                        pattern=".{8,}"
+                        title="Nyolc vagy több karakter."
+                        required>
+                </label>
+            </section>
+            <section>
+                <label>
+                    Telefonszám:
+                    <input type="tel" name="phone-number" placeholder="06/+36123-12345678" title="06/+36123-12345678">
+                </label>
+            </section>
+            <fieldset>
+                <legend>A Control (Crtl) gombot lenyomva tartva tudsz egyszerre több nevet is kiválasztani.</legend>
+                <label>
+                    Kedvenc tag:
+                    <select name="fav-member" multiple>
+                        <option value="roger">Roger</option>
+                        <option value="freddie">Freddie</option>
+                        <option value="john">John</option>
+                        <option value="brian">Brian</option>
+                    </select>
+                </label>
+            </fieldset>
+            <section>
+                <label>
+                    Amit nem szeretek a Queen-ben:
+                    <input type="text" name="not-like-about" placeholder="Semmi" disabled>
+                </label>
+            </section>
+            <fieldset>
+                <Legend>Szeretnél hetente egy e-mail-t kapni tőlem?</Legend>            
+                <label>
+                    <input type="radio" name="email-reg" value="yes">
+                    Igen
+                </label>
+                <label>
+                    <input type="radio" name="email-reg" value="no">
+                    Nem
+                </label> 
+                <section>
+                    <p>Milyen témákról olvasnál?</p>
+                    <label>
+                        <input type="checkbox" name="news" value="yes">
+                        Hírek
+                    </label>
+                    <label>
+                        <input type="checkbox" name="stories" value="yes">
+                        Történetek a Queen tagjairól.
+                    </label>
+                    <label>
+                        <input type="checkbox" name="crypto" value="yes" disabled>
+                        Hogy lehetek gazdag a Bitcoin segítségével?
+                    </label>      
+                </section>
+            </fieldset>
+            <section>
+                <label>
+                Üzenet:
+                <textarea name="message" cols="30" rows="5">Hagyj üzenetet!</textarea> 
+                </label>
+            </section>
+            <section>
+                <label>
+                    Feltölthetsz egy avatárt:
+                    <input type="file" name="avatar">
+                </label>
+            </section>
+            <section>
+                <input type="submit" value="Beküldés">
+            </section>
+        </form>
+
+    </main>
+
+    <hr>
+    <footer>
+        Ezt az oldalt <a href="mailto:t.kis502@gmail.com">Tamás Kis</a> készítette.
+    </footer>
+
+</body>
+</html>
