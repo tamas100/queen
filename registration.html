@@ -5,35 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <style>
-        section, fieldset {
-                margin: 10px;
-            }
-
-        label {
-            user-select: none;
-            cursor: pointer;
-        }          
-        table {
-            border: 2px solid black;
-            background-color: #eea;
-            border-spacing: 0;
-        }
-        th,
-        td {
-            border: 2px solid black;
-            margin: 0;
-            padding: 4px;
-            text-align: left;
-        }
-        tfoot td {
-            text-align: center;
-        }
-        footer {
-            text-align: center;
-            padding: 8px;
-        }   
-    </style>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>    
@@ -45,12 +17,24 @@
               <td>
                 <details>
                   <summary>Nyelvválasztás | Sprachen</summary>
-                  <p><a href="registration-hu.html">magyar</a></p>
-                  <p><a href="registration-de.html">deutsch</a></p>
+                  <p><a href="./registration-hu.html">magyar</a></p>
+                  <p><a href="./registration-de.html">deutsch</a></p>
                 </details>
               </td>
               <td>
-                <a href="index.html">Home</a>
+                <a href="./index.html">Home</a>
+              </td>
+              <td>
+                <details>
+                  <summary>The Members of Queen</summary>
+                  <p><a href="./freddie-mercury.html">Freddie Mercury</a></p>
+                  <p><a href="./brian-may.html">Brian May</a></p>
+                  <p><a href="./roger-taylor.html">Roger Taylor</a></p>
+                  <p><a href="./john-deacon.html">John Deacon</a></p>
+                </details>
+              </td>
+              <td>
+                <a href="registration.html">Registration</a>
               </td>
               <td>
                 <a id="top-of-page" href="#bottom-of-page">To the bottom of the page</a>
@@ -64,26 +48,19 @@
 
         <h1>Sign up!</h1>
 
-        <form action="https://formspree.io/f/mwkjlakp" method="post">
-            <section>
+        <form action="https://formspree.io/f/mwkjlakp" method="post" class="contact-form">
                 <label>
                     First name*:
                     <input type="text" name="first-name" placeholder="First name" required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Last name*:
                     <input type="text" name="last-name" placeholder="Last name" required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Email address*:
                     <input type="email" name="email" placeholder="Email address" required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Password*:
                     <input type="password" name="password" placeholder="Eight or more characters." 
@@ -91,13 +68,10 @@
                         title="Eight or more characters."
                         required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Phone number:
                     <input type="tel" name="phone-number" placeholder="06/+36-123-12345678" title="06/+36-123-12345678">
                 </label>
-            </section>
             <fieldset>
                 <legend>You can select multiple names at once by holding down the Control (Crtl) key. </legend>
                 <label>
@@ -110,12 +84,10 @@
                     </select>
                 </label>
             </fieldset>
-            <section>
                 <label>
                     What I don't like about Queen:
                     <input type="text" name="not-like-about" placeholder="Nothing" disabled>
                 </label>
-            </section>
             <fieldset>
                 <Legend>Do you want to receive a weekly email from me?</Legend>            
                 <label>
@@ -125,8 +97,7 @@
                 <label>
                     <input type="radio" name="email-reg" value="no">
                     No
-                </label> 
-                <section>
+                </label>
                     <p>What topics do you want to read about?</p>
                     <label>
                         <input type="checkbox" name="news" value="yes">
@@ -139,24 +110,18 @@
                     <label>
                         <input type="checkbox" name="crypto" value="yes" disabled>
                         How can you be a rich man with a help of Bitcoin?
-                    </label>      
-                </section>
+                    </label>
             </fieldset>
-            <section>
                 <label>
                 Message:
                 <textarea name="message" cols="30" rows="5">Leave a message!</textarea> 
                 </label>
-            </section>
-            <section>
                 <label>
                     You can upload an avatar:
                     <input type="file" name="avatar">
                 </label>
-            </section>
-            <section>
                 <input type="submit" value="Submit">
-            </section>
+                <input type="reset" value="Reset">
         </form>
 
     </main>
@@ -164,8 +129,14 @@
     <hr>
     <footer>
         <aside>
-            This page was created by <a href="mailto:t.kis502@gmail.com">Tamás Kis</a>
-        </aside>      
+          This page was created by <a href="mailto:t.kis502@gmail.com">Tamás Kis</a>
+        </aside>
+        <aside>
+          I have used 
+            <a href="http://www.ultimatequeen.co.uk" target="_blank" title="www.ultimatequeen.co.uk">
+              <img src="./images/uq-banner.jpg" alt="www.ultimatequeen.co.uk" style="width: 200px; height: 50px;"></a>
+          to gather information for the pages of the musicians.        
+        </aside>     
       <a id="bottom-of-page" href="#top-of-page">To the top of the page</a>
     </footer>
 

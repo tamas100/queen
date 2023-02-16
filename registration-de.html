@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="stylesheet" href="./styles/styles.css">
     <style>
         section, fieldset {
                 margin: 10px;
@@ -44,13 +45,25 @@
             <tr>
               <td>
                 <details>
-                    <summary>Languages | Nyelvválasztás</summary>
-                    <p><a href="registration.html">english</a></p>
-                    <p><a href="registration-hu.html">magyar</a></p> 
+                  <summary>Languages | Nyelvválasztás</summary>
+                  <p><a href="./registration.html">english</a></p>
+                  <p><a href="./registration-hu.html">magyar</a></p>
                 </details>
               </td>
               <td>
-                <a href="index-de.html">Home</a>
+                <a href="./index-de.html">Startseite</a>
+              </td>
+              <td>
+              <details>
+                <summary>Die Mitglieder von Queen</summary>
+                <p><a href="./freddie-mercury-de.html">Freddie Mercury</a></p>
+                <p><a href="./brian-may-de.html">Brian May</a></p>
+                <p><a href="./roger-taylor-de.html">Roger Taylor</a></p>
+                <p><a href="./john-deacon-de.html">John Deacon</a></p>
+              </details>
+            </td>
+              <td>
+                <a href="registration-de.html">Registrierung</a>
               </td>
               <td>
                 <a id="top-of-page" href="#bottom-of-page">Nach unten</a>
@@ -64,26 +77,19 @@
 
         <h1>Registrierung</h1>
 
-        <form action="https://formspree.io/f/mwkjlakp" method="post">
-            <section>
+        <form action="https://formspree.io/f/mwkjlakp" method="post" class="contact-form">            
                 <label>
                     Vorname*:
                     <input type="text" name="first-name" placeholder="Vorname" required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Nachname*:
                     <input type="text" name="last-name" placeholder="Nachname" required>
                 </label>
-            </section>
-            <section>
                 <label>
                     E-Mail-Adresse*:
                     <input type="email" name="email" placeholder="E-Mail-Adresse" required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Passwort*:
                     <input type="password" name="password" placeholder="Eight or more characters." 
@@ -91,73 +97,61 @@
                         title="Acht oder mehr Charakter."
                         required>
                 </label>
-            </section>
-            <section>
                 <label>
                     Telefonnummer:
                     <input type="tel" name="phone-number" placeholder="06/+36-123-12345678" title="06/+36-123-12345678">
                 </label>
-            </section>
-            <fieldset>
-                <legend>Sie können mehrere Namen gleichzeitig auswählen, indem Sie die Strg-Taste gedrückt halten.
-                </legend>
-                <label>
-                    Lieblingsmitglied:
-                    <select name="fav-member" multiple>
-                        <option value="roger">Roger</option>
-                        <option value="freddie">Freddie</option>
-                        <option value="john">John</option>
-                        <option value="brian">Brian</option>
-                    </select>
-                </label>
-            </fieldset>
-            <section>
+                <fieldset>
+                    <legend>Sie können mehrere Namen gleichzeitig auswählen, indem Sie die Strg-Taste gedrückt halten.
+                    </legend>
+                    <label>
+                        Lieblingsmitglied:
+                        <select name="fav-member" multiple>
+                            <option value="roger">Roger</option>
+                            <option value="freddie">Freddie</option>
+                            <option value="john">John</option>
+                            <option value="brian">Brian</option>
+                        </select>
+                    </label>
+                </fieldset>
                 <label>
                     Was ich an Queen nicht mag:
                     <input type="text" name="not-like-about" placeholder="Nichts" disabled>
                 </label>
-            </section>
-            <fieldset>
-                <Legend>Möchten Sie eine wöchentliche E-Mail von mir erhalten?</Legend>            
-                <label>
-                    <input type="radio" name="email-reg" value="yes">
-                    Ja
-                </label>
-                <label>
-                    <input type="radio" name="email-reg" value="no">
-                    Nein
-                </label> 
-                <section>
-                    <p>Über welche Themen möchten Sie lesen?</p>
+                <fieldset>
+                    <Legend>Möchten Sie eine wöchentliche E-Mail von mir erhalten?</Legend>            
                     <label>
-                        <input type="checkbox" name="news" value="yes">
-                        Nachrichten
+                        <input type="radio" name="email-reg" value="yes">
+                        Ja
                     </label>
                     <label>
-                        <input type="checkbox" name="stories" value="yes">
-                        Geschichten über Queen-Mitglieder
+                        <input type="radio" name="email-reg" value="no">
+                        Nein
                     </label>
-                    <label>
-                        <input type="checkbox" name="crypto" value="yes" disabled>
-                        Wie kann man mit Hilfe von Bitcoin reich werden?
-                    </label>      
-                </section>
-            </fieldset>
-            <section>
+                        <p>Über welche Themen möchten Sie lesen?</p>
+                        <label>
+                            <input type="checkbox" name="news" value="yes">
+                            Nachrichten
+                        </label>
+                        <label>
+                            <input type="checkbox" name="stories" value="yes">
+                            Geschichten über Queen-Mitglieder
+                        </label>
+                        <label>
+                            <input type="checkbox" name="crypto" value="yes" disabled>
+                            Wie kann man mit Hilfe von Bitcoin reich werden?
+                        </label>
+                </fieldset>
                 <label>
                 Nachricht:
                 <textarea name="message" cols="30" rows="5">Hinterlassen Sie eine Nachricht!</textarea> 
                 </label>
-            </section>
-            <section>
                 <label>
                     Sie können einen Avatar hochladen:
                     <input type="file" name="avatar">
                 </label>
-            </section>
-            <section>
                 <input type="submit" value="Absenden">
-            </section>
+                <input type="reset" value="Löschen">
         </form>
 
     </main>
@@ -165,7 +159,13 @@
     <hr>
     <footer>
         <aside>
-            Diese Seite war von <a href="mailto:t.kis502@gmail.com">Tamás Kis</a> erstellt.
+          Diese Seite war von <a href="mailto:t.kis502@gmail.com">Tamás Kis</a> erstellt.
+        </aside>
+        <aside>
+          Ich habe
+            <a href="http://www.ultimatequeen.co.uk" target="_blank" title="www.ultimatequeen.co.uk">
+              <img src="./images/uq-banner.jpg" alt="www.ultimatequeen.co.uk" style="width: 200px; height: 50px;"></a>
+          benutzt, um Informationen für die Seiten der Musiker zu sammeln.        
         </aside>
         <a id="bottom-of-page" href="#top-of-page">Nach oben</a>
     </footer>
