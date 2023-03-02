@@ -2,16 +2,20 @@
   font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
+html {
+  font-size: 10px;
+}
+
 table {
     width: 100%;
-    border: 0.5px solid #25283D;
+    border: 1px solid #25283D;
     background-color: #679D24;
     border-spacing: 0;
     color: #EDE6F2;
   }
 
   th, td {
-    border: 2px solid black;
+    border: 1px solid black;
     margin: 0;
     padding: 4px;
     text-align: left;
@@ -57,20 +61,20 @@ table {
   }
 
   p {
-    font-size: 1.25rem;    
+    font-size: 2rem;    
     text-align: justify;
   }
 
   h1 {
-    font-size: 2.5rem;    
+    font-size: 4rem;    
   }
 
   h2 {
-    font-size: 2rem;    
+    font-size: 3.2rem;    
   }
 
   h3 {
-    font-size: 1.25rem;    
+    font-size: 2.4rem;    
   }
 
   header, footer {
