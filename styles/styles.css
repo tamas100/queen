@@ -6,7 +6,14 @@ html {
   font-size: 10px;
 }
 
-table {
+body {
+  font-size: 1.6rem;
+  background-size: contain;
+  background-color: #C1292E;
+  color: #EDE6F2;
+}
+
+table {    
     width: 100%;
     border: 1px solid #25283D;
     background-color: #679D24;
@@ -17,7 +24,7 @@ table {
   th, td {
     border: 1px solid black;
     margin: 0;
-    padding: 4px;
+    padding: 4px;    
     text-align: left;
   }
 
@@ -32,7 +39,7 @@ table {
     cursor: pointer;
   }
 
-  footer {
+  footer {    
     text-align: center;
     padding: 8px;
   }
@@ -41,7 +48,7 @@ table {
     /* display: block; */
     border-radius: 16px;
     margin: 40px auto;
-    width: 100%;
+    width: 100%;    
     /* width: 500px;
     height: 300px; */
   }
@@ -75,17 +82,7 @@ table {
 
   h3 {
     font-size: 2.4rem;    
-  }
-
-  header, footer {
-    font-size: 1rem;    
-  }
-
- body {
-  background-size: contain;
-  background-color: #C1292E;
-  color: #EDE6F2;
- }
+  } 
 
  #ultimate_queen {
   vertical-align: sub;  
@@ -98,7 +95,7 @@ table {
  }
 
  ul li {
-  padding: 10px;
+  padding: 10px; 
  }
 
 
