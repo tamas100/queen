@@ -98,4 +98,47 @@ table {
   padding: 10px; 
  }
 
+ .newspaper {
+  margin: 25px auto;
+  width: 1000px;
+  height: 500px;
+  border: 2px solid #25283D;
+  font-size: 0px;
+  box-sizing: border-box;
+ }
 
+.column {
+  width: calc(33.33% - 20px);
+  height: calc(100% - 20px);  
+  background-color: #679D24;
+  border: 2px solid #25283D;
+  padding: 20px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10px;
+  font-size: 1.6rem;
+  text-align: justify;
+
+}
+
+.column_2{
+  float: left;
+  width: calc(33.33% - 20px);
+  height: calc(100% - 20px);
+  background-color: #679D24;
+  border: 2px solid #25283D;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+  text-align: justify;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
