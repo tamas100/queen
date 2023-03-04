@@ -15,17 +15,21 @@ body {
 
 table {    
     width: 100%;
-    border: 1px solid #25283D;
+    border: 2px solid #25283D;
     background-color: #679D24;
     border-spacing: 0;
     color: #EDE6F2;
   }
 
   th, td {
-    border: 1px solid black;
+    border: 1px solid #25283D;
     margin: 0;
     padding: 4px;    
     text-align: left;
+  }
+
+  .coral tr:hover {
+    background-color: coral;
   }
 
   tfoot td {
