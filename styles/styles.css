@@ -13,6 +13,63 @@ body {
   color: #ede6f2;
 }
 
+/* Navigation bar */
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar ul {
+  list-style-type: none;
+}
+
+.globus {
+  width: 50px;
+}
+
+.navbar > ul {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #960200;
+}
+
+.navbar > ul > li {
+  display: inline-block;
+  position: relative;
+  background-color: #ffd046;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.navbar > ul > li:hover > ul {
+  display: block;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  display: block;
+  color: #182825;
+}
+
+.navbar ul li a:hover {
+  color: #960200;
+}
+
+.navbar > ul > li > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+}
+
+.navbar > ul > li > ul > li {
+  background-color: #ffd046;
+  border-radius: 5px;
+}
+
+/* Navigation bar */
+
 table {
   width: 100%;
   border: 2px solid #25283d;
