@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Queen</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <style>
-      img {
-        width: 100%;
-      }         
-    </style>    
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-
     <header>
-
-      <table>
+      <!-- <table>
         <tr>
           <td>
             <details>
@@ -44,24 +44,47 @@
             <a id="top-of-page" href="#bottom-of-page">Nach unten</a>
           </td>
         </tr>
-      </table>   
-
-      <img src="images/queen-live-banner.jpg" alt="queen-live-banner" />
-
+      </table>    -->
+      <nav class="navbar">
+        <ul>
+          <li id="globus">
+            <a href=""><i class="fa-solid fa-globe"></i></a>
+            <ul>
+              <li><a href="./index-de.html">Deutsch</a></li>
+              <li><a href="./index.html">English</a></li>
+              <li><a href="./index-hu.html">Magyar</a></li>
+            </ul>
+          </li>
+          <li><a href="./index-de.html">Startseite</a></li>
+          <li>
+            <a href="">Die Mitglieder von Queen</a>
+            <ul>
+              <li><a href="./freddie-mercury-de.html">Freddie Mercury</a></li>
+              <li><a href="./brian-may-de.html">Brian May</a></li>
+              <li><a href="./roger-taylor-de.html">Roger Taylor</a></li>
+              <li><a href="./john-deacon-de.html">John Deacon</a></li>
+            </ul>
+          </li>
+          <li><a href="registration-de.html">Registrierung</a></li>
+          <li>
+            <a href="#bottom-of-page"><i class="fa-solid fa-down-long"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <img
+        src="./images/queen-live-banner.jpg"
+        alt="queen-live-banner"
+        class="img"
+      />
     </header>
 
     <main>
+      <h1 class="name_underline">Die Queen Rockband</h1>
 
-      <h1>
-        Die Queen Rockband
-      </h1>
-
-      <p>
-        <b>Die beste Rockgruppe aller Zeiten!</b>
-      </p>
+      <p class="name_strong-italic">Die beste Rockgruppe aller Zeiten!</p>
       <p>
         Diese Seite enthält einige Grundinformationen über der Gruppe Queen.
-      </p>      
+      </p>
 
       <h2>Mitglieder</h2>
 
@@ -79,7 +102,7 @@
             <td>Herkunft</td>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="coral">
           <tr>
             <th><a href="freddie-mercury-de.html">Freddie Mercury</a></th>
             <td>05.09.1946</td>
@@ -104,8 +127,8 @@
         </tbody>
         <tfoot>
           <tr>
-              <td colspan="4">Die Allerbesten!</td>
-          </tr>        
+            <td colspan="4">Die Allerbesten!</td>
+          </tr>
         </tfoot>
       </table>
 
@@ -132,9 +155,9 @@
         <dd>John Richard Deacon (born 19. August 1951.)</dd>
         <dd>bass, rhythm guitar, keyboards, synthesiser (1971–1997)</dd>
       </dl-->
-      
+
       <h2>Alben</h2>
-      <ul style="list-style-type: square;">
+      <ul class="album-list">
         <li>
           Studioalben
           <ol>
@@ -175,40 +198,53 @@
         </li-->
       </ul>
 
-      <iframe width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/HgzGwKwLmgM" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/HgzGwKwLmgM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      >
       </iframe>
 
-      <iframe 
-        style="border-radius:12px" 
-        src="https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7?utm_source=generator" 
-        width="100%" 
-        height="352" 
-        frameBorder="0" 
-        allowfullscreen="" 
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-        loading="lazy">
+      <iframe
+        style="border-radius: 12px"
+        src="https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+      >
       </iframe>
-
     </main>
-    <hr>
+    <hr />
     <footer>
-      <aside>
-        Diese Seite war von <a href="mailto:t.kis502@gmail.com">Tamás Kis</a> erstellt.
-      </aside>
-      <aside>
+      <p>
+        2023 <span>&copy;</span>
+        Diese Seite war von
+        <a href="mailto:t.kis502@gmail.com">Tamás Kis</a> erstellt.
+      </p>
+      <p>
         Ich habe
-          <a href="http://www.ultimatequeen.co.uk" target="_blank" title="www.ultimatequeen.co.uk">
-            <img src="./images/uq-banner.jpg" alt="www.ultimatequeen.co.uk" style="width: 200px; height: 50px;"></a>
-        benutzt, um Informationen für die Seiten der Musiker zu sammeln.        
-      </aside>
-      <a id="bottom-of-page" href="#top-of-page">Nach oben</a>
-  </footer>
-  </body>
+        <a
+          href="http://www.ultimatequeen.co.uk"
+          target="_blank"
+          title="www.ultimatequeen.co.uk"
+        >
+          <img
+            src="./images/uq-banner.jpg"
+            alt="www.ultimatequeen.co.uk"
+            id="ultimate_queen"
+        /></a>
+        benutzt, um Informationen für die Seiten der Musiker zu sammeln.
+      </p>
+      <p>
+        <a id="bottom-of-page" href="#globus">Nach oben</a>
+      </p>
+    </footer>
   </body>
 </html>

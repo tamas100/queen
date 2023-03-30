@@ -1,144 +1,214 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regisztráció</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-</head>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>    
-
+  <body>
     <header>
-
-        <table>
-            <tr>
-              <td>
-                <details>
-                  <summary>Languages | Sprachen</summary>
-                  <p><a href="./registration.html">english</a></p>
-                  <p><a href="./registration-de.html">deutsch</a></p>
-                </details>
-              </td>
-              <td>
-                <a href="./index-hu.html">Főoldal</a>
-              </td>
-              <td>
-                <details>
-                  <summary>A Queen tagjai</summary>
-                  <p><a href="./freddie-mercury-hu.html">Freddie Mercury</a></p>
-                  <p><a href="./brian-may-hu.html">Brian May</a></p>
-                  <p><a href="./roger-taylor-hu.html">Roger Taylor</a></p>
-                  <p><a href="./john-deacon-hu.html">John Deacon</a></p>
-                </details>
-              </td>
-              <td>
-                <a href="./registration-hu.html">Regisztráció</a>
-              </td>
-              <td>
-                <a id="top-of-page" href="#bottom-of-page">A lap aljára</a>
-              </td>
-            </tr>
-        </table>        
-
+      <!-- <table>
+        <tr>
+          <td>
+            <details>
+              <summary>Languages | Sprachen</summary>
+              <p><a href="./registration.html">english</a></p>
+              <p><a href="./registration-de.html">deutsch</a></p>
+            </details>
+          </td>
+          <td>
+            <a href="./index-hu.html">Főoldal</a>
+          </td>
+          <td>
+            <details>
+              <summary>A Queen tagjai</summary>
+              <p><a href="./freddie-mercury-hu.html">Freddie Mercury</a></p>
+              <p><a href="./brian-may-hu.html">Brian May</a></p>
+              <p><a href="./roger-taylor-hu.html">Roger Taylor</a></p>
+              <p><a href="./john-deacon-hu.html">John Deacon</a></p>
+            </details>
+          </td>
+          <td>
+            <a href="./registration-hu.html">Regisztráció</a>
+          </td>
+          <td>
+            <a id="top-of-page" href="#bottom-of-page">A lap aljára</a>
+          </td>
+        </tr>
+      </table> -->
+      <nav class="navbar">
+        <ul>
+          <li id="globus">
+            <a href=""><i class="fa-solid fa-globe"></i></a>
+            <ul>
+              <li><a href="./index-de.html">Deutsch</a></li>
+              <li><a href="./index.html">English</a></li>
+              <li><a href="./index-hu.html">Magyar</a></li>
+            </ul>
+          </li>
+          <li><a href="./index-hu.html">Főoldal</a></li>
+          <li>
+            <a href="">A Queen tagjai</a>
+            <ul>
+              <li><a href="./freddie-mercury-hu.html">Freddie Mercury</a></li>
+              <li><a href="./brian-may-hu.html">Brian May</a></li>
+              <li><a href="./roger-taylor-hu.html">Roger Taylor</a></li>
+              <li><a href="./john-deacon-hu.html">John Deacon</a></li>
+            </ul>
+          </li>
+          <li><a href="registration-hu.html">Regisztráció</a></li>
+          <li>
+            <a href="#bottom-of-page"><i class="fa-solid fa-down-long"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <h1>Regisztrálj!</h1>
 
-        <h1>Regisztrálj!</h1>
-
-        <form action="https://formspree.io/f/mwkjlakp" method="post" class="contact-form">
-                <label>
-                    Vezetéknév*:
-                    <input type="text" name="last-name" placeholder="Vezetéknév" required>
-                </label>
-                <label>
-                    Keresztnév*:
-                    <input type="text" name="first-name" placeholder="Keresztnév" required>
-                </label>
-                <label>
-                    E-mail cím*:
-                    <input type="email" name="email" placeholder="E-mail cím" required>
-                </label>
-                <label>
-                    Jelszó*:
-                    <input type="password" name="password" placeholder="Nyolc vagy több karakter." 
-                        pattern=".{8,}"
-                        title="Nyolc vagy több karakter."
-                        required>
-                </label>
-                <label>
-                    Telefonszám:
-                    <input type="tel" name="phone-number" placeholder="06/+36-123-12345678" title="06/+36-123-12345678">
-                </label>
-            <fieldset>
-                <legend>A Control (Crtl) gombot lenyomva tartva tudsz egyszerre több nevet is kiválasztani.</legend>
-                <label>
-                    Kedvenc tag:
-                    <select name="fav-member" multiple>
-                        <option value="roger">Roger</option>
-                        <option value="freddie">Freddie</option>
-                        <option value="john">John</option>
-                        <option value="brian">Brian</option>
-                    </select>
-                </label>
-            </fieldset>
-                <label>
-                    Amit nem szeretek a Queen-ben:
-                    <input type="text" name="not-like-about" placeholder="Semmi" disabled>
-                </label>
-            <fieldset>
-                <Legend>Szeretnél hetente egy e-mail-t kapni tőlem?</Legend>            
-                <label>
-                    <input type="radio" name="email-reg" value="yes">
-                    Igen
-                </label>
-                <label>
-                    <input type="radio" name="email-reg" value="no">
-                    Nem
-                </label>
-                    <p>Milyen témákról olvasnál?</p>
-                    <label>
-                        <input type="checkbox" name="news" value="yes">
-                        Hírek
-                    </label>
-                    <label>
-                        <input type="checkbox" name="stories" value="yes">
-                        Történetek a Queen tagjairól.
-                    </label>
-                    <label>
-                        <input type="checkbox" name="crypto" value="yes" disabled>
-                        Hogy lehetek gazdag a Bitcoin segítségével?
-                    </label>
-            </fieldset>
-                <label>
-                Üzenet:
-                <textarea name="message" cols="30" rows="5">Hagyj üzenetet!</textarea> 
-                </label>
-                <label>
-                    Feltölthetsz egy avatárt:
-                    <input type="file" name="avatar">
-                </label>
-                <input type="submit" value="Beküldés">
-                <input type="reset" value="Törlés">
-        </form>
-
+      <form
+        action="https://formspree.io/f/mwkjlakp"
+        method="post"
+        class="contact-form"
+      >
+        <label>
+          Vezetéknév*:
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Vezetéknév"
+            required
+          />
+        </label>
+        <label>
+          Keresztnév*:
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Keresztnév"
+            required
+          />
+        </label>
+        <label>
+          E-mail cím*:
+          <input type="email" name="email" placeholder="E-mail cím" required />
+        </label>
+        <label>
+          Jelszó*:
+          <input
+            type="password"
+            name="password"
+            placeholder="Nyolc vagy több karakter."
+            pattern=".{8,}"
+            title="Nyolc vagy több karakter."
+            required
+          />
+        </label>
+        <label>
+          Telefonszám:
+          <input
+            type="tel"
+            name="phone-number"
+            placeholder="06/+36-123-12345678"
+            title="06/+36-123-12345678"
+          />
+        </label>
+        <fieldset>
+          <legend>
+            A Control (Crtl) gombot lenyomva tartva tudsz egyszerre több nevet
+            is kiválasztani.
+          </legend>
+          <label>
+            Kedvenc tag:
+            <select name="fav-member" multiple>
+              <option value="roger">Roger</option>
+              <option value="freddie">Freddie</option>
+              <option value="john">John</option>
+              <option value="brian">Brian</option>
+            </select>
+          </label>
+        </fieldset>
+        <label>
+          Amit nem szeretek a Queen-ben:
+          <input
+            type="text"
+            name="not-like-about"
+            placeholder="Semmi"
+            disabled
+          />
+        </label>
+        <fieldset>
+          <legend>Szeretnél hetente egy e-mail-t kapni tőlem?</legend>
+          <label>
+            <input type="radio" name="email-reg" value="yes" />
+            Igen
+          </label>
+          <label>
+            <input type="radio" name="email-reg" value="no" />
+            Nem
+          </label>
+          <p>Milyen témákról olvasnál?</p>
+          <label>
+            <input type="checkbox" name="news" value="yes" />
+            Hírek
+          </label>
+          <label>
+            <input type="checkbox" name="stories" value="yes" />
+            Történetek a Queen tagjairól.
+          </label>
+          <label>
+            <input type="checkbox" name="crypto" value="yes" disabled />
+            Hogy lehetek gazdag a Bitcoin segítségével?
+          </label>
+        </fieldset>
+        <label>
+          Üzenet:
+          <textarea name="message" cols="30" rows="5">Hagyj üzenetet!</textarea>
+        </label>
+        <label>
+          Feltölthetsz egy avatárt:
+          <input type="file" name="avatar" />
+        </label>
+        <input type="submit" value="Beküldés" />
+        <input type="reset" value="Törlés" />
+      </form>
     </main>
 
-    <hr>
+    <hr />
     <footer>
-        <aside>
-          Ezt az oldalt <a href="mailto:t.kis502@gmail.com">Tamás Kis</a> készítette.
-        </aside>
-        <aside>
-          A
-            <a href="http://www.ultimatequeen.co.uk" target="_blank" title="www.ultimatequeen.co.uk">
-              <img src="./images/uq-banner.jpg" alt="www.ultimatequeen.co.uk" style="width: 200px; height: 50px;"></a>
-          honlap tartalmát használtam a zenészek oldalaihoz.        
-        </aside>
-        <a id="bottom-of-page" href="#top-of-page">A lap tetejére</a>
+      <p>
+        2023 <span>&copy;</span>
+        Ezt az oldalt
+        <a href="mailto:t.kis502@gmail.com">Kis Tamás</a> készítette.
+      </p>
+      <p>
+        A
+        <a
+          href="http://www.ultimatequeen.co.uk"
+          target="_blank"
+          title="www.ultimatequeen.co.uk"
+        >
+          <img
+            src="./images/uq-banner.jpg"
+            alt="www.ultimatequeen.co.uk"
+            id="ultimate_queen"
+        /></a>
+        honlap tartalmát használtam a zenészek oldalaihoz.
+      </p>
+      <p>
+        <a id="bottom-of-page" href="#globus">A lap tetejére</a>
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
