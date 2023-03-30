@@ -104,11 +104,6 @@ tfoot td {
   cursor: pointer;
 }
 
-footer {
-  text-align: center;
-  padding: 8px;
-}
-
 .img {
   /* display: block; */
   border-radius: 16px;
@@ -134,7 +129,6 @@ footer {
 
 p {
   font-size: 2rem;
-  text-align: justify;
 }
 
 h1 {
@@ -209,4 +203,17 @@ ul li {
 
 .center {
   text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+}
+
+footer p {
+  font-size: 1.6rem;
+}
+
+footer a {
+  color: #ede6f2;
 }
