@@ -1,4 +1,6 @@
 * {
+  margin: 0; /* navbar */
+  padding: 0;
   font-family: "Open Sans", Helvetica, sans-serif;
 }
 
@@ -14,10 +16,6 @@ body {
 }
 
 /* Navigation bar */
-* {
-  margin: 0;
-  padding: 0;
-}
 .navbar ul {
   list-style-type: none;
 }
@@ -30,13 +28,13 @@ body {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  background-color: #960200;
+  /* background-color: #960200; */
 }
 
 .navbar > ul > li {
   display: inline-block;
   position: relative;
-  background-color: #ffd046;
+  background-color: #8f6b00;
   border-radius: 5px;
   padding: 0 20px;
 }
@@ -48,11 +46,11 @@ body {
 .navbar ul li a {
   text-decoration: none;
   display: block;
-  color: #182825;
+  color: #ede6f2;
 }
 
 .navbar ul li a:hover {
-  color: #960200;
+  color: #f50400;
 }
 
 .navbar > ul > li > ul {
@@ -64,17 +62,22 @@ body {
 }
 
 .navbar > ul > li > ul > li {
-  background-color: #ffd046;
+  background-color: #8f6b00;
   border-radius: 5px;
 }
 
-/* Navigation bar */
+/* Table */
 
 table {
   width: 100%;
   border: 2px solid #25283d;
-  background-color: #679d24;
+  background-color: #8f6b00;
   border-spacing: 0;
+  border-radius: 5px;
+  color: #ede6f2;
+}
+
+table a {
   color: #ede6f2;
 }
 
@@ -87,7 +90,7 @@ td {
 }
 
 .coral tr:hover {
-  background-color: coral;
+  background-color: #ce6c47;
 }
 
 tfoot td {
@@ -152,8 +155,9 @@ h3 {
   height: 30px;
 }
 
-ul {
+.album-list {
   list-style-type: square;
+  margin: 30px;
 }
 
 ul li {
@@ -165,6 +169,7 @@ ul li {
   width: 1000px;
   height: 500px;
   border: 2px solid #25283d;
+  border-radius: 5px;
   font-size: 0px;
   box-sizing: border-box;
 }
@@ -174,6 +179,7 @@ ul li {
   height: calc(100% - 20px);
   background-color: #679d24;
   border: 2px solid #25283d;
+  border-radius: 5px;
   padding: 20px;
   display: inline-block;
   box-sizing: border-box;
@@ -186,8 +192,9 @@ ul li {
   float: left;
   width: calc(33.33% - 20px);
   height: calc(100% - 20px);
-  background-color: #679d24;
+  background-color: #8f6b00;
   border: 2px solid #25283d;
+  border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
   margin: 10px;
