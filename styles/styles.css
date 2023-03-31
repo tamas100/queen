@@ -199,7 +199,7 @@ ul li {
   text-align: justify;
 }
 
-.row:after {
+.newspaper:after {
   content: "";
   display: table;
   clear: both;
