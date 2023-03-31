@@ -93,6 +93,10 @@ td {
   background-color: #ce6c47;
 }
 
+.coral:hover #england {
+  background-color: #ce6c47;
+}
+
 tfoot td {
   text-align: center;
 }
